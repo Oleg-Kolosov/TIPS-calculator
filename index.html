@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script src="index.js" defer type="module"></script>
+	<title>Tips calculator</title>
+</head>
+<body>
+	<div id="tips-calculator" class="flex flex-col p-5 gap-3 sm:w-3/4 md:w-2/5 mx-auto">
+		<p>Bill:</p>
+		<input id="bill" type="number" class="border-2 p-1 rounded-md" placeholder="$">
+		<p>Tips %</p>
+		<select id="tips" class="border-2 p-1 rounded-md">
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+		</select>
+		<p>Persons:</p>
+		<input id="persons" type="number" class="border-2 p-1 rounded-md" placeholder='1'>
+		<p id="total">Total:</p>
+		<p id="person-total">Per person:</p>
+	</div>
+</body>
+</html>
